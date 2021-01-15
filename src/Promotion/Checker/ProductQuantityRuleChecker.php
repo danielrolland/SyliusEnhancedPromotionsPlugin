@@ -1,6 +1,7 @@
 <?php
 
 namespace DanielRolland\SyliusEnhancedPromotionsPlugin\Promotion\Checker;
+
 use Sylius\Component\Core\Model\OrderInterface;
 use Sylius\Component\Core\Model\OrderItemInterface;
 use Sylius\Component\Core\Model\ProductInterface;
@@ -23,12 +24,14 @@ class ProductQuantityRuleChecker implements RuleCheckerInterface
             if (!($configuration['product'] instanceof ProductInterface)) {
                 throw new UnsupportedTypeException($configuration['product'], ProductInterface::class);
             }
-            if ($configuration['product']->getCode() === $item->getProduct()->getCode()
-                && $configuration['quantity'] <= $item->getQuantity()) {
-                return true;
+            $product = $item->getProduct();
+            if ($product instanceof ProductInterface) {
+                if ($configuration['product']->getCode() === $product->getCode()
+                    && $configuration['quantity'] <= $item->getQuantity()) {
+                    return true;
+                }
             }
         }
-
         return false;
     }
 }
