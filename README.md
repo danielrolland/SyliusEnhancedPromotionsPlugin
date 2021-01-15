@@ -1,6 +1,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE)
-[![Build Status][ico-travis]][link-travis]
+[![Build Status](https://travis-ci.org/danielrolland/SyliusEnhancedPromotionsPlugin.svg?branch=master)](https://travis-ci.org/danielrolland/SyliusEnhancedPromotionsPlugin)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/danielrolland/SyliusEnhancedPromotionsPlugin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/danielrolland/SyliusEnhancedPromotionsPlugin/?branch=master)
 
 # Sylius Enhanced Promotions Plugin
@@ -33,9 +33,6 @@ return [
 
 [ico-version]: https://img.shields.io/packagist/v/danielrolland/sylius-enhanced-promotions-plugin.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/danielrolland/sylius-enhanced-promotions-plugin/master.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/danielrolland/sylius-enhanced-promotions-plugin.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/danielrolland/sylius-enhanced-promotions-plugin
-[link-travis]: https://travis-ci.org/DanielRolland/SyliusEnhancedPromotionsPlugin
 [link-scrutinizer]: https://scrutinizer-ci.com/g/DanielRolland/SyliusEnhancedPromotionsPlugin/code-structure
